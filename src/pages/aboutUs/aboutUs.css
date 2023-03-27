@@ -4,6 +4,7 @@ height: 223px;
 object-fit: cover;
 border-radius: 25px;
 margin-bottom: 30px;
+filter: brightness(70%);
 
 }
 .dropdown-container{

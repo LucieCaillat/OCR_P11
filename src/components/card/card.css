@@ -1,6 +1,7 @@
 .card h2{
  font-size: 18px;
  width: 320px;
+ height: 0px;
  text-decoration: none;
  color: white;
  position: relative;
