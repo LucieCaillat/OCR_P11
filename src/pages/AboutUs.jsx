@@ -1,5 +1,3 @@
-function AboutUs(){
+export default function AboutUs(){
   return <h1>À propos</h1>
 }
-
-export default AboutUs
