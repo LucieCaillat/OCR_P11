@@ -7,3 +7,8 @@
 .main{
   margin: 0 7%;
 }
+@media screen and (max-width: 550px) {
+  .main{
+    margin: 0 5.5%;
+  }
+}

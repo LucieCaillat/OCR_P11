@@ -23,4 +23,18 @@
   background: #F6F6F6;
   border-radius: 25px;
   padding: 56px 0;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 610px) {
+  .home-cover{
+    height: 111px;
+  }
+  .home-title{    
+    width: 230px;
+    margin: 10px;
+    text-align: left;
+    font-size: 24px;
+    bottom: 130px;
+  }
 }

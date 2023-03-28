@@ -17,3 +17,17 @@
 .header-logo{
   height: 68px;
 }
+
+
+@media screen and (max-width: 610px) {
+  .header{
+    height: 83px;    
+  }
+  .nav-link{
+    font-size: 12px;
+    margin-left: 10px;    
+  }
+  .header-logo{
+    height: 47px;
+  }
+}
