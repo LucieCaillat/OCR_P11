@@ -10,8 +10,8 @@ import './header.css'
   return <header className='header'>
     <img src={logo} alt="Kaza" className='header-logo'/>
     <nav className='nav'>
-        <Link to="/" className={'nav-link ' + (isHomePage && 'curent-link')}>Accueil</Link>
-        <Link to="about" className={'nav-link ' + (isAboutUsPage && 'curent-link')}>À Propos</Link>
+        <Link to="/" className={`nav-link ${isHomePage && 'curent-link'}`}>Accueil</Link>
+        <Link to="about" className={`nav-link ${isAboutUsPage && 'curent-link'}`}>À Propos</Link>
       </nav>    
     </header>
 }

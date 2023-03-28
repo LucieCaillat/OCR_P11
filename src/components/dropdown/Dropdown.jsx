@@ -9,7 +9,7 @@ export default function Dropdown({ children, title }){
       <h2>{title}</h2>
       <i className={`fa-solid ${isOpen? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
     </div>
-    <div className={`dropdown_text ${!isOpen ? "hidden" : ""}`}>
+    <div className={`dropdown_text ${!isOpen && 'hidden'}`}>
       {children}
     </div>
   </div>
