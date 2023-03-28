@@ -1,9 +1,9 @@
 .dropdown{
   margin-bottom: 24px;
 }
-.dropdown_title{
-  background-color:#FF6060;
+.dropdown_title{  
   height: 47px;
+  background-color:#FF6060;
   color: white;
   font-size: 24px;
   padding: 0 18px;
@@ -14,9 +14,6 @@
   cursor: pointer;
 }
 
-.dropdown_title .chevron-down{
-  transform: rotate(180deg);
-}
 .dropdown_text{
   background: #F6F6F6;
   color: #FF6060;

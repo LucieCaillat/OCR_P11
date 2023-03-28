@@ -5,3 +5,71 @@
   border-radius: 25px;
   margin-bottom: 30px;
 }
+.headline-information-box{
+  display: flex;
+  justify-content: space-between;
+  color: #FF6060;
+  margin-bottom: 24px;
+}
+.headline-information-box h1{
+  /* max-width: 95%; */
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.headline-information-box h2{
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.tags-box{
+  display: flex;
+}
+.tag{
+  min-width: 115px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+.host-rating-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.host-box{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.host-name{
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+.host-box img{
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 32px;
+  margin-left: 10px;  
+}
+.place-dropdowns-box{
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.place-dropdowns-box .dropdown{
+  width: 47%;
+}

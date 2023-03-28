@@ -8,18 +8,26 @@ export default function Place(){
   const {title, cover, description, host, location, tags, equipments, rating} = places.filter((place)=> place.id === id)[0]
   return <div>
     <img src={cover} alt={title} className="place-cover"/>
-    <div>
-      <h1>{title}</h1>
-      <h2>{location}</h2>
-      {tags.map((tag)=> <div key={tag}>{tag}</div>)}
-    </div>
-    <div>
-      <div>{host.name}</div>
-      <img src={host.picture} alt={host.name} />
-      <RatingStars rating={parseInt(rating)}/>
-      <div>note : {rating}</div>
-    </div>
-    <div>
+    <div className='headline-information-box'>
+      <div>
+        <h1>{title}</h1>
+        <h2>{location}</h2>
+        <div className='tags-box'>
+          {tags.map((tag)=> <div key={tag} className='tag'>{tag}</div>)}
+        </div>        
+      </div>
+      <div className='host-rating-box'>
+        <div className='host-box'>
+          <div className='host-name'>
+            <div>{host.name.split(' ')[0]}</div>
+            <div>{host.name.split(' ')[1]}</div>
+          </div>
+          <img src={host.picture} alt={host.name} />
+        </div>        
+        <RatingStars rating={parseInt(rating)}/>
+      </div>
+    </div>    
+    <div className='place-dropdowns-box'>
       <Dropdown title="Description">
         <p>{description}</p>
       </Dropdown>
