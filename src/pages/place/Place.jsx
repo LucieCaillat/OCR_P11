@@ -1,12 +1,18 @@
 import places from '../../datas/logements.json'
 import Dropdown from '../../components/dropdown/Dropdown'
 import RatingStars from '../../components/ratingStars/RatingStars'
+import Error from '../error/Error'
 import './place.css'
 
 export default function Place(){
   const id = window.location.pathname.replace(/\/place\//,'')
-  const {title, cover, description, host, location, tags, equipments, rating} = places.filter((place)=> place.id === id)[0]
-  return <div>
+  const dataPlace = places.filter((place)=> place.id === id)[0]
+  const isExistingPlace = dataPlace != null
+  if (!isExistingPlace){
+    return <Error/>
+  }
+  const {title, cover, description, host, location, tags, equipments, rating} = dataPlace
+  return  <div>
     <img src={cover} alt={title} className="place-cover"/>
     <div className='headline-information-box'>
       <div>

@@ -8,6 +8,7 @@ filter: brightness(70%);
 
 }
 .dropdown-container{
+  min-height: 550px;
   margin: 0 8%;
-  margin-bottom: 30%;
+  margin-bottom: 46px;  
 }
