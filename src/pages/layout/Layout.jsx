@@ -1,10 +1,10 @@
 import { Routes, Route} from 'react-router-dom';
-import Header from '../../components/Header/Header';
+import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import Home from '../home/Home';
 import AboutUs from '../aboutUs/AboutUs';
 import Place from '../place/Place';
-import Error from '../Error';
+import Error from '../error/Error';
 import './layout.css'
 
 export default function Layout(){
@@ -15,7 +15,7 @@ export default function Layout(){
         <Route path="/" element={<Home/>}/>
         <Route path="about" element={<AboutUs/>}/>
         <Route path="place/:id" element={<Place/>}/>
-        <Route path=":error" element={<Error/>}/>
+        <Route path="*" element={<Error/>}/>
       </Routes>
     </div>      
       <Footer/>

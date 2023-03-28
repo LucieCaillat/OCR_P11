@@ -13,9 +13,7 @@
   align-items: center;
   cursor: pointer;
 }
-.dropdown_title img{
-  width: 14px;
-}
+
 .dropdown_title .chevron-down{
   transform: rotate(180deg);
 }

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import chevron from '../../assets/chevron.png'
 import './dropdown.css'
 
 export default function Dropdown({ children, title }){
@@ -8,10 +7,10 @@ export default function Dropdown({ children, title }){
   return <div className='dropdown'>
     <div className="dropdown_title" onClick={()=> {updateState(!isOpen)}}>
       <h2>{title}</h2>
-      <img src={chevron} alt={"dropdown " + (isOpen ? "ouvert" : "fermé")} className={!isOpen? "chevron-down" : null}/>
+      <i className={`fa-solid ${isOpen? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
     </div>
-    <div className={"dropdown_text " + (!isOpen ? "hidden" : "")}>
-      <p>{children}</p>
+    <div className={`dropdown_text ${!isOpen ? "hidden" : ""}`}>
+      {children}
     </div>
   </div>
 }

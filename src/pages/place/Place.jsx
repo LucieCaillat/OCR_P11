@@ -1,5 +1,6 @@
 import places from '../../datas/logements.json'
 import Dropdown from '../../components/dropdown/Dropdown'
+import RatingStars from '../../components/ratingStars/RatingStars'
 import './place.css'
 
 export default function Place(){
@@ -15,11 +16,12 @@ export default function Place(){
     <div>
       <div>{host.name}</div>
       <img src={host.picture} alt={host.name} />
+      <RatingStars rating={parseInt(rating)}/>
       <div>note : {rating}</div>
     </div>
     <div>
       <Dropdown title="Description">
-        {description}
+        <p>{description}</p>
       </Dropdown>
       <Dropdown title="Équipements">
         <ul>
