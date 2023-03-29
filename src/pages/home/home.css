@@ -17,24 +17,30 @@
   bottom: 170px;
 }
 .card-container{
-  display: flex;
-  justify-content: space-evenly;
+  display: flex;  
   flex-wrap: wrap;
+  justify-content: space-around;
   background: #F6F6F6;
   border-radius: 25px;
-  padding: 56px 0;
+  padding: 31px 2%;  
   margin-bottom: 50px;
 }
 
 @media screen and (max-width: 610px) {
   .home-cover{
     height: 111px;
+    margin-bottom: 0px;
   }
   .home-title{    
     width: 230px;
     margin: 10px;
     text-align: left;
     font-size: 24px;
-    bottom: 130px;
+    bottom: 100px;
+  }
+  .card-container{
+    background: white; 
+    margin-bottom: 50px;
+    padding: 0; 
   }
 }
