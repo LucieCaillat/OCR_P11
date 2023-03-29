@@ -1,5 +1,6 @@
 import places from '../../datas/logements.json'
 import Error from '../error/Error'
+import Gallery from '../../components/gallery/Gallery'
 import HostBox from '../../components/hostBox/HostBox'
 import TagsBox from '../../components/tags/TagsBox'
 import RatingStars from '../../components/ratingStars/RatingStars'
@@ -13,9 +14,9 @@ export default function Place(){
   if (!isExistingPlace){
     return <Error/>
   }
-  const {title, cover, description, host, location, tags, equipments, rating} = dataPlace
+  const {title, pictures, description, host, location, tags, equipments, rating} = dataPlace
   return  <div>
-    <img src={cover} alt={title} className="place-cover"/>
+    <Gallery pictures={pictures} title={title}/>
     <div className='headline-information-box'>
       <div>
         <h1>{title}</h1>
