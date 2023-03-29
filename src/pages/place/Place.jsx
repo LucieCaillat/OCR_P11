@@ -1,7 +1,9 @@
 import places from '../../datas/logements.json'
-import Dropdown from '../../components/dropdown/Dropdown'
-import RatingStars from '../../components/ratingStars/RatingStars'
 import Error from '../error/Error'
+import HostBox from '../../components/hostBox/HostBox'
+import TagsBox from '../../components/tags/TagsBox'
+import RatingStars from '../../components/ratingStars/RatingStars'
+import Dropdown from '../../components/dropdown/Dropdown'
 import './place.css'
 
 export default function Place(){
@@ -18,18 +20,10 @@ export default function Place(){
       <div>
         <h1>{title}</h1>
         <h2>{location}</h2>
-        <div className='tags-box'>
-          {tags.map((tag)=> <div key={tag} className='tag'>{tag}</div>)}
-        </div>        
+        <TagsBox tags={tags}/>
       </div>
       <div className='host-rating-box'>
-        <div className='host-box'>
-          <div className='host-name'>
-            <div>{host.name.split(' ')[0]}</div>
-            <div>{host.name.split(' ')[1]}</div>
-          </div>
-          <img src={host.picture} alt={host.name} />
-        </div>        
+        <HostBox name={host.name} picture={host.picture}/>
         <RatingStars rating={parseInt(rating)}/>
       </div>
     </div>    

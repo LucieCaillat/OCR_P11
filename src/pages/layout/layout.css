@@ -5,11 +5,11 @@
   justify-content: space-between;
 }
 .main{
-  padding: 0 7%;
+  margin: 0 7%;
   min-height: 100vh;
 }
 @media screen and (max-width: 610px) {
   .main{
-    margin: 0 5.5%;
+    margin: 0 5%;
   }
 }
