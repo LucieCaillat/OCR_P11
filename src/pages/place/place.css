@@ -26,6 +26,7 @@
 }
 .tags-box{
   display: flex;
+  flex-wrap: wrap;
 }
 .tag{
   min-width: 115px;
@@ -66,10 +67,43 @@
   margin-left: 10px;  
 }
 .place-dropdowns-box{
-  min-height: 300px;
   display: flex;
   justify-content: space-between;
 }
 .place-dropdowns-box .dropdown{
   width: 47%;
+}
+
+@media screen and (max-width: 610px) {
+  .place-cover{
+    height: 255px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .headline-information-box{
+    display: block;
+    margin-bottom: 24px;
+  }
+  .headline-information-box h1{
+    font-size: 18px;
+    line-height: 25px;  
+  }
+  .headline-information-box h2{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .host-rating-box{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+  }
+  .place-dropdowns-box{
+    display: block;
+  }
+  .place-dropdowns-box .dropdown{
+    width: 100%;
+  }
 }
