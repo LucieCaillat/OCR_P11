@@ -29,11 +29,12 @@
 @media screen and (max-width: 610px) {
   .home-cover{
     height: 111px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
   }
   .home-title{    
     width: 230px;
-    margin: 10px;
+    margin-left: 10px;
     text-align: left;
     font-size: 24px;
     bottom: 100px;

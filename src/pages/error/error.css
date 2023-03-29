@@ -7,7 +7,6 @@
   align-items: center;
   color: #FF6060;
   margin-top: 100px;
-  margin-bottom: 159px;
 }
 .error-box h1{
   font-weight: 700;
@@ -18,10 +17,31 @@
 }
 .error-box p{
   font-size: 36px;
+  text-align: center;
   margin: 0;
   margin-bottom: 182px;
 }
 .error-box .link{
   font-size: 18px;
   color: #FF6060;
+}
+
+@media screen and (max-width: 610px) {
+  .error-box{
+    margin-top: 180px;
+    margin-bottom: 0;
+  }
+  .error-box h1{
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96px;
+    margin-bottom: 11px;
+  }
+  .error-box p{
+    font-size: 18px;
+    margin-bottom: 133px;
+  }
+  .error-box .link{
+    font-size: 14px;
+  }
 }
