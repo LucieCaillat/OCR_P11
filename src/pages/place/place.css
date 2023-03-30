@@ -1,61 +1,60 @@
-.headline-information-box{
+.headline-information-box {
   display: flex;
   justify-content: space-between;
-  color: #FF6060;
+  color: #ff6060;
   margin-bottom: 24px;
 }
-.headline-information-box h1{
+.headline-information-box h1 {
   font-size: 36px;
   line-height: 51px;
   margin: 0;
   margin-bottom: 5px;
 }
-.headline-information-box h2{
+.headline-information-box h2 {
   font-size: 18px;
   line-height: 26px;
   margin: 0;
   margin-bottom: 10px;
 }
-.host-rating-box{
+.host-rating-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
 }
-.place-dropdowns-box{
+.place-dropdowns-box {
   display: flex;
   justify-content: space-between;
 }
-.place-dropdowns-box .dropdown{
+.place-dropdowns-box .dropdown {
   width: 47%;
 }
 @media screen and (max-width: 775px) {
-
-  .headline-information-box{
+  .headline-information-box {
     display: block;
     margin-bottom: 24px;
   }
-  .host-rating-box{
+  .host-rating-box {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     margin-top: 17px;
   }
-  .place-dropdowns-box{
+  .place-dropdowns-box {
     display: block;
   }
-  .place-dropdowns-box .dropdown{
+  .place-dropdowns-box .dropdown {
     width: 100%;
-  }  
+  }
 }
 
-@media screen and (max-width: 610px) {  
-  .headline-information-box h1{
+@media screen and (max-width: 610px) {
+  .headline-information-box h1 {
     font-size: 18px;
-    line-height: 25px;  
+    line-height: 25px;
   }
-  .headline-information-box h2{
+  .headline-information-box h2 {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 0px;

@@ -1,21 +1,21 @@
-.about-us-cover{
-width: 100%;
-height: 223px;
-object-fit: cover;
-border-radius: 25px;
-margin-bottom: 30px;
-filter: brightness(70%);
+.about-us-cover {
+  width: 100%;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  filter: brightness(70%);
 }
-.dropdown-container{
+.dropdown-container {
   margin: 0 8%;
-  margin-bottom: 46px;  
+  margin-bottom: 46px;
 }
 @media screen and (max-width: 610px) {
-  .about-us-cover{
+  .about-us-cover {
     border-radius: 10px;
     margin-bottom: 20px;
-  }  
-  .dropdown-container{
-    margin: 0;    
+  }
+  .dropdown-container {
+    margin: 0;
   }
 }

@@ -1,9 +1,9 @@
-.dropdown{
+.dropdown {
   margin-bottom: 24px;
 }
-.dropdown_title{  
+.dropdown_title {
   height: 47px;
-  background-color:#FF6060;
+  background-color: #ff6060;
   color: white;
   font-size: 24px;
   padding: 0 18px;
@@ -14,23 +14,23 @@
   cursor: pointer;
 }
 
-.dropdown_text{
-  background: #F6F6F6;
-  color: #FF6060;
+.dropdown_text {
+  background: #f6f6f6;
+  color: #ff6060;
   font-weight: 400;
   font-size: 24px;
-  padding: 36px 27px  19px 18px;
+  padding: 36px 27px 19px 18px;
   border-radius: 5px;
   position: relative;
-  bottom : 9px;
+  bottom: 9px;
   z-index: -1;
 }
 @media screen and (max-width: 610px) {
-  .dropdown_title{      
-    font-size: 13px;    
+  .dropdown_title {
+    font-size: 13px;
   }
-  
-  .dropdown_text{
-    font-size: 12px;    
+
+  .dropdown_text {
+    font-size: 12px;
   }
 }

@@ -1,16 +1,16 @@
-.star-box{
+.star-box {
   width: 170px;
 }
-.fa-star{
-  color: #E3E3E3;
+.fa-star {
+  color: #e3e3e3;
   font-size: 30px;
 }
-.filled-star{
-  color: #FF6060;
+.filled-star {
+  color: #ff6060;
 }
 
 @media screen and (max-width: 610px) {
-  .fa-star{
+  .fa-star {
     font-size: 20px;
   }
 }

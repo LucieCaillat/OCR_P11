@@ -1,5 +1,5 @@
-import './tag.css'
+import "./tag.css";
 
-export default function Tag({name}){
-  return<div className='tag'>{name}</div>
+export default function Tag({ name }) {
+  return <div className="tag">{name}</div>;
 }

@@ -1,31 +1,31 @@
-.host-box{
+.host-box {
   display: flex;
   align-items: center;
   font-size: 18px;
 }
-.host-name{
+.host-name {
   height: 52px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
 }
-.host-box img{
+.host-box img {
   width: 64px;
   height: 64px;
   object-fit: cover;
   border-radius: 32px;
-  margin-left: 10px;  
+  margin-left: 10px;
 }
 @media screen and (max-width: 610px) {
-  .host-box{
+  .host-box {
     font-size: 12px;
   }
-  .host-name{
+  .host-name {
     height: 33px;
   }
-  .host-box img{
+  .host-box img {
     width: 32px;
-    height: 32px;    
+    height: 32px;
   }
 }

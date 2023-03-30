@@ -1,15 +1,15 @@
-.screen{
+.screen {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.main{
+.main {
   margin: 0 7%;
   min-height: 100vh;
 }
 @media screen and (max-width: 610px) {
-  .main{
+  .main {
     margin: 0 5%;
   }
 }
