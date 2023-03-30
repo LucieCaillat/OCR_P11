@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./hostBox.css";
 
 export default function HostBox({ name, picture }) {
@@ -13,3 +14,8 @@ export default function HostBox({ name, picture }) {
     </div>
   );
 }
+
+HostBox.propTypes = {
+  title: PropTypes.string,
+  picture: PropTypes.string,
+};

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Tag from "./Tag";
 import "./tagsBox.css";
 
@@ -10,3 +11,7 @@ export default function TagsBox({ tags }) {
     </div>
   );
 }
+
+TagsBox.propTypes = {
+  tags: PropTypes.array,
+};

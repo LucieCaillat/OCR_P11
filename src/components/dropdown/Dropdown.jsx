@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 import "./dropdown.css";
 
@@ -23,3 +24,7 @@ export default function Dropdown({ children, title }) {
     </div>
   );
 }
+
+Dropdown.propTypes = {
+  title: PropTypes.string,
+};

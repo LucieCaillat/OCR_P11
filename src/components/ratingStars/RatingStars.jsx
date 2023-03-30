@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./ratingStars.css";
 
 export default function RatingStars({ rating }) {
@@ -14,3 +15,7 @@ export default function RatingStars({ rating }) {
     </div>
   );
 }
+
+RatingStars.propTypes = {
+  rating: PropTypes.number,
+};

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 import "./gallery.css";
 
@@ -37,3 +38,8 @@ export default function Gallery({ pictures, title }) {
     </div>
   );
 }
+
+Gallery.propTypes = {
+  pictures: PropTypes.array,
+  title: PropTypes.string,
+};
