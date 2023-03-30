@@ -1,9 +1,9 @@
-import places from "../../datas/logements.json";
+import PropTypes from "prop-types";
 import Card from "../../components/card/Card";
 import cover from "../../assets/home-cover.jpg";
 import "./home.css";
 
-export default function Home() {
+export default function Home({ places }) {
   return (
     <div>
       <img src={cover} alt="Accueil" className="home-cover" />
@@ -22,3 +22,7 @@ export default function Home() {
     </div>
   );
 }
+
+Home.propTypes = {
+  places: PropTypes.array,
+};

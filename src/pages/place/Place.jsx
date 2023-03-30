@@ -1,4 +1,4 @@
-import places from "../../datas/logements.json";
+import PropTypes from "prop-types";
 import Error from "../error/Error";
 import Gallery from "../../components/gallery/Gallery";
 import HostBox from "../../components/hostBox/HostBox";
@@ -7,7 +7,7 @@ import RatingStars from "../../components/ratingStars/RatingStars";
 import Dropdown from "../../components/dropdown/Dropdown";
 import "./place.css";
 
-export default function Place() {
+export default function Place({ places }) {
   const id = window.location.pathname.replace(/\/place\//, "");
   const dataPlace = places.filter((place) => place.id === id)[0];
   const isExistingPlace = dataPlace != null;
@@ -53,3 +53,7 @@ export default function Place() {
     </div>
   );
 }
+
+Place.propTypes = {
+  places: PropTypes.array,
+};
