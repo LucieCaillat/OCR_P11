@@ -3,10 +3,12 @@ import { useState } from "react";
 import "./gallery.css";
 
 export default function Gallery({ pictures, title }) {
+  const [loading, udateLoading] = useState(false);
   const [imageIndex, updateImageIndex] = useState(0);
   const indexOflastPicture = pictures.length - 1;
   const isJustOnePicture = indexOflastPicture === 0;
   function handleClickLeft() {
+    udateLoading(true);
     if (imageIndex === 0) {
       updateImageIndex(indexOflastPicture);
     } else {
@@ -14,6 +16,7 @@ export default function Gallery({ pictures, title }) {
     }
   }
   function handleClickRight() {
+    udateLoading(true);
     if (imageIndex === indexOflastPicture) {
       updateImageIndex(0);
     } else {
@@ -28,7 +31,14 @@ export default function Gallery({ pictures, title }) {
         }`}
         onClick={handleClickLeft}
       ></i>
-      <img src={pictures[imageIndex]} alt={title} className="gallery-cover" />
+      <img
+        src={pictures[imageIndex]}
+        alt={title}
+        className={`gallery-cover ${loading ? "loading" : ""}`}
+        onLoad={() => {
+          udateLoading(false);
+        }}
+      />
       <i
         className={`fa-solid fa-chevron-right ${
           isJustOnePicture ? "hidden" : ""
