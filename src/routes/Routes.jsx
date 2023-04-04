@@ -11,9 +11,7 @@ export default function KazaRoutes() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(
-          `https://raw.githubusercontent.com/8UK0W5K1/OCR_P11_KAZA/main/src/data/housingsData.json`
-        );
+        const response = await fetch(`/datas/logements.json`);
         const data = await response.json();
         udatePlaceData(data);
       } catch (err) {
