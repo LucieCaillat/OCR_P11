@@ -13,7 +13,7 @@ export default function Dropdown({ children, title }) {
           updateState(!isOpen);
         }}
       >
-        <h2>{title}</h2>
+        <p>{title}</p>
         <i
           className={`fa-solid ${isOpen ? "fa-chevron-up" : "fa-chevron-down"}`}
         ></i>
