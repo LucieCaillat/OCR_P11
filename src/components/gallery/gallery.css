@@ -23,9 +23,7 @@
   border-radius: 25px;
   z-index: -1;
 }
-.gallery .loading {
-  filter: brightness(0.5);
-}
+
 @media screen and (max-width: 610px) {
   .gallery {
     margin-bottom: 15px;
