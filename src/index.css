@@ -1,14 +1,15 @@
-body{
+body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
-.hidden{
+.hidden {
   display: none;
 }
-ul{
+ul {
   padding: 0;
+  margin: 0;
 }
-li{
+li {
   list-style: none;
 }

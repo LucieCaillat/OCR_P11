@@ -32,6 +32,9 @@
 .place-dropdowns-box .dropdown_title {
   font-size: 18px;
 }
+.place-dropdowns-box .dropdown_text {
+  font-size: 18px;
+}
 @media screen and (max-width: 775px) {
   .headline-information-box {
     display: block;
@@ -64,5 +67,8 @@
   }
   .place-dropdowns-box .dropdown_title {
     font-size: 13px;
+  }
+  .place-dropdowns-box .dropdown_text {
+    font-size: 12px;
   }
 }
