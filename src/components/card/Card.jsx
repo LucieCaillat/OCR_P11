@@ -7,7 +7,7 @@ export default function Card(props) {
   return (
     <div className="card">
       <Link to={"place/" + id}>
-        <img src={cover} alt={title} />
+        <img src={cover} alt={title} onClick={() => window.scroll(0, 0)} />
       </Link>
       <h2>{title}</h2>
     </div>
